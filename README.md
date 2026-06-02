@@ -1,7 +1,15 @@
 # CoScientist
 
-A production-quality Node.js CLI implementing the CoScientist multi-agent hypothesis generation
+[![CI](https://github.com/chrismaduro/coscientist/actions/workflows/ci.yml/badge.svg)](https://github.com/chrismaduro/coscientist/actions/workflows/ci.yml)
+
+A production-quality Node.js implementation of the CoScientist multi-agent hypothesis generation
 system (Gottweis et al., 2025 — arXiv:2502.18864v1).
+
+Six specialized AI agents — Generation, Proximity, Reflection, Ranking, Evolution, and
+Meta-review — are orchestrated by a Supervisor to generate, debate, rank (via an Elo
+tournament), and evolve research hypotheses. Runs in your browser via a local server, or as
+a standalone Windows `.exe` (no Node install required). Works with Google Gemini (free tier)
+or Anthropic Claude.
 
 Six specialized AI agents (Generation, Proximity, Reflection, Ranking, Evolution, Meta-review)
 are orchestrated by a Supervisor in a non-linear pipeline to generate, debate, evolve, and rank
